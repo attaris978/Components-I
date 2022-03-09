@@ -102,7 +102,7 @@ const articleMaker = (article) =>  {
   let expandButton = document.createElement("span");
   expandButton.innerText = "x";
   art.appendChild(expandButton).classList.add("expandButton");
-  expandButton.addEventListener('click',event => event.target.classList.toggle("article-open"));
+  expandButton.addEventListener('click',() => art.classList.toggle("article-open"));
   return art;
 }
 document.querySelector("div.articles").appendChild(articleMaker(data[0]));
