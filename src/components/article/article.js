@@ -89,6 +89,15 @@ const data = [
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
   }
 ];
+data.push({
+  title: 'This is the Title of My Addition',
+  date: 'March 8, 2022',
+  firstParagraph: `Twas brillig and the slythy toves `,
+
+  secondParagraph: `Did gyre and gymbal in the wabe `,
+
+  thirdParagraph: `All mimsy were the borogoves and the momewraths outgrabe`
+})
 const articleMaker = (article) =>  {
   let art = document.createElement("div");
   art.classList.add("article");
