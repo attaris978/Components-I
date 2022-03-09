@@ -105,7 +105,7 @@ const articleMaker = (article) =>  {
   expandButton.addEventListener('click',() => art.classList.toggle("article-open"));
   return art;
 }
-document.querySelector("div.articles").appendChild(articleMaker(data[0]));
+data.forEach(val => document.querySelector("div.articles").appendChild(articleMaker(val)));
 /*
   Step 1: Write a component called 'articleMaker' to create an article.
   Your component is a function that takes an article object as its only argument,
